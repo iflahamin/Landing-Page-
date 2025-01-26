@@ -12,7 +12,7 @@
 /* Define custom properties for layout (default values) */
 :root {
     --wave-height: 100vh;  /* Default height for waves */
-    --text-font-size: 2rem;  /* Default font size for offers text */
+    /* --text-font-size: 2rem;   */
     --header-height: 110px;  /* Default height for header */
     --logo-width: 100px;  /* Default width for logo */
     --container-padding: 20px;  /* Default padding */
@@ -37,8 +37,8 @@ body, html {
 /* Media query for medium screens */
 @media (min-width: 770px) and (max-width: 1024px) {
     :root {
-        --wave-height: 60vh;  /* Adjust wave height for tablets */
-        --text-font-size: 1.8rem;  /* Adjust font size for medium screens */
+        --wave-height: 60%;  /* Adjust wave height for tablets */
+        /* --text-font-size: 1.8rem;  */
         --header-height: 100px;  /* Reduce header height */
         --logo-width: 90px;  /* Adjust logo size */
         --container-padding: 15px;  /* Adjust padding */
@@ -46,10 +46,10 @@ body, html {
 }
 
 /* Media query for small screens */
-@media (min-width: 100px) and (max-width: 770px) {
+@media (min-width: 100px) and (max-width: 769px) {
     :root {
-        --wave-height: 50vh;  /* Smaller wave height for smaller screens */
-        --text-font-size: 1.5rem;  /* Smaller font size for small screens */
+        --wave-height: 50%;  /* Smaller wave height for smaller screens */
+        /* --text-font-size: 1.5rem;   */
         --header-height: 90px;  /* Further reduce header height */
         --logo-width: 80px;  /* Adjust logo size */
         --container-padding: 10px;  /* Adjust padding for smaller screens */
@@ -153,7 +153,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     background-color: #52057B;
     /* border-radius: 8px; */
 }
@@ -168,7 +168,7 @@ section {
 
 .wave-container {
     position: absolute;
-    bottom: -10vw; /* Adjust to make the wave visible */
+    bottom: -10%; /* Adjust to make the wave visible */
     left: 0;
     width: 100%; /* Full section width */
     overflow: hidden;
@@ -209,23 +209,23 @@ section {
     }
 }
 /* Medium screens: Between 768px and 1024px */
-@media (min-width: 770px) and (max-width: 2024px) {
+@media (min-width: 771px) and (max-width: 2024px) {
     .wave-container {
-        height: 60vh; /* Medium height for tablets or similar devices */
+        height: 60%; /* Medium height for tablets or similar devices */
     }
 }
 
 /* Small screens: Between 480px and 768px */
-@media (min-width: 480px) and (max-width: 770px) {
+@media (min-width: 481px) and (max-width: 770px) {
     .wave-container {
-        height: 50vh; 
+        height: 50%; 
     }
 }
 
 /* Smaller screens: */
 @media (min-width: 100px) and (max-width: 480px) {
     .wave-container {
-        height: 55vh; /* Smaller height for larger phones or small tablets */
+        height: 55%; /* Smaller height for larger phones or small tablets */
     }
 }
 
@@ -618,7 +618,7 @@ button {
 /* For screens smaller than 480px (mobile devices) */
 @media (min-width: 100px) and (max-width: 480px) {
     .offers{
-        top: 450px !important;
+        top: 64% !important;
     }
     .offer1, .offer2, .offer3 {
         font-size: 0.9rem;
@@ -630,7 +630,7 @@ button {
 }
 
 /* For screens between 480px and 630px */
-@media (min-width: 480px) and (max-width: 630px) {
+@media (min-width: 481px) and (max-width: 630px) {
     .offers{
         top: 69%;
     }
@@ -644,7 +644,7 @@ button {
 }
 
 /* For screens between 630px and 770px */
-@media (min-width: 630px) and (max-width: 770px) {
+@media (min-width: 631px) and (max-width: 770px) {
     .offer1, .offer2, .offer3 {
         font-size: 16px;
         width: 65%;
@@ -655,7 +655,7 @@ button {
 }
 
 /* For screens between 770px and 1024px */
-@media (min-width: 770px) and (max-width: 1024px) {
+@media (min-width: 771px) and (max-width: 1024px) {
     .offer1, .offer2, .offer3 {
         font-size: 18px;
         width: 55%;
@@ -666,7 +666,7 @@ button {
 
 }
 /* For screens between 1024px and 1300px */
-@media (min-width: 1024px) and (max-width: 1300px) {
+@media (min-width: 1025px) and (max-width: 1300px) {
     .offer1, .offer2, .offer3 {
         font-size: 20px;
         width: 50%;
@@ -678,7 +678,7 @@ button {
 }
 
 /* For screens larger than 1300px */
-@media (min-width: 1300px) and (max-width:2400px) {
+@media (min-width: 1301px) and (max-width:2400px) {
     .offer1, .offer2, .offer3 {
         font-size: 20px;
         width: 40%;
@@ -710,17 +710,7 @@ button {
     text-align: center;
     color: #ffffff;
 }
-/* 
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-        left: -100%; 
-    }
-    100% {
-        transform: translateX(--final-left, 0)
-        left: var(--final-left, 0); 
-    }
-} */
+
 
 
 /* Styling the Paragraph */
@@ -734,26 +724,39 @@ button {
     font-family: 'Comic Sans'; 
 }
 
-/* Keyframes for moving the gradient */
-@keyframes gradientMove {
+/* 
+@keyframes slideIn {
     0% {
-        background-position: 0% 50%; /* Start position */
+        transform: translateX(-100%);
+        left: -100%; 
     }
     100% {
-        background-position: 100% 50%; /* End position */
+        transform: translateX(--final-left, 0)
+        left: var(--final-left, 0); 
     }
-}
+} */
+
+/* Keyframes for moving the gradient */
+/* @keyframes gradientMove {
+    0% {
+        background-position: 0% 50%; 
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+} */
 
 /* Media Queries for Responsiveness */
 
 /* For screens smaller than 480px (mobile devices) */
 @media (min-width: 100px) and (max-width: 480px) {
-    /* .home-text {
-        margin-top: -900px;
-        padding: 30px;
-    } */
+    .home-text {
+        /* margin-top: -900px; */
+        transform: translateY(-25%);
+        padding: 10px;
+    }
     .home-text h1 {
-        margin-top: -650px;
+        /* margin-top: -650px; */
         font-size: 30px; /* Moderately sized heading */
         animation: slideIn 2s ease-out forwards !important;
     }
@@ -763,14 +766,15 @@ button {
 }
 
 /* For screens between 480px and 768px (small tablets) */
-@media (min-width: 480px) and (max-width: 630px) {
+@media (min-width: 481px) and (max-width: 630px) {
     .home-text {
-        margin-top: -900px;
+        transform: translateY(-20%);
+        /* margin-top: -900px; */
         padding: 30px;
     }
     .home-text h1 {
         font-size: 40px; /* Moderately sized heading */
-        animation: slideIn 2s ease-out forwards !important;
+        animation: slideIn 2s ease-out forwards ;
     }
     .home-text p {
         font-size: 17px;
@@ -780,7 +784,8 @@ button {
 /* For screens larger than 768px (desktops) */
 @media (min-width: 630px) and (max-width: 770px) {
     .home-text {
-        margin-top: -900px;
+        /* margin-top: -900px; */
+        transform: translateY(-25%);
         padding: 30px;
     }
     .home-text h1 {
@@ -793,7 +798,8 @@ button {
 }
 @media (min-width: 770px) and (max-width: 1024px) {
     .home-text {
-        margin-top: -900px;
+        /* margin-top: -900px; */
+        transform: translateY(-30%);
         padding: 30px;
     }
     .home-text h1 {
@@ -807,7 +813,8 @@ button {
 
 @media (min-width: 1024px) and (max-width: 1300px) {
     .home-text {
-        margin-top: -900px;
+        /* margin-top: -900px; */
+        transform: translateY(-35%);
         padding: 0px;
     }
     .home-text h1 {
@@ -821,7 +828,8 @@ button {
 }
 @media (min-width: 1300px) and (max-width:2400px) {
     .home-text {
-        margin-top: -900px;
+        /* margin-top: -900px; */
+        transform: translateY(-30%);
         padding: 0px;
     }
     .home-text h1 {
@@ -853,13 +861,13 @@ button {
 @media (min-width: 100px) and (max-width: 480px) {
     .book {
         width: 40%;
-        top: 57%; /* Adjust as needed */
+        top: 40%; /* Adjust as needed */
         left: 0%; /* Adjust as needed */
     }
 
     .hat {
         width: 30%;
-        top: 55%; /* Adjust as needed (9) */
+        top: 18%; /* Adjust as needed (9) */
         right: -12%; /* Adjust as needed */
     }
 
@@ -868,14 +876,14 @@ button {
 @media (min-width: 480px) and (max-width: 630px) {
     .book {
         width: 40%;
-        top: 25%; /* Adjust as needed */
+        top: 40%; /* Adjust as needed */
         left: 0%; /* Adjust as needed */
     }
 
     .hat {
         width: 30%;
-        top: 26%; /* Adjust as needed */
-        right: -12%; /* Adjust as needed */
+        top: 15%; /* Adjust as needed */
+        right: -10%; /* Adjust as needed */
     }
 
 }
@@ -945,12 +953,7 @@ button {
 }
 
 /* About Section */
-#about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-}
+
 
 /* Create a flex container for icon and text */
 /* .about-content {
@@ -977,11 +980,18 @@ button {
     height: auto; 
 } */
 
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
 /* About Us icon responsiveness */
 .about-text{
     max-width: 100%;
     height: auto;
-    transform: translateY(-100px);
+    /* transform: translateY(5%); */
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -994,7 +1004,7 @@ button {
     text-align: center;
     color: #ffffff;
     text-shadow: 5px 5px 3px black;
-    transform: translateY(250px);
+    /* transform: translateY(250px); */
 }
 .about-text-p1{
     font-weight: bolder;
@@ -1002,13 +1012,13 @@ button {
     text-align: center;
     color: #ffffff;
     /* text-shadow: 5px 5px 3px black; */
-    transform: translateY(265px);
+    /* transform: translateY(265px); */
 }
 .about-text-p2{
     color: white;
     font-family: 'Comic Sans'; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    transform: translateY(270px);
+    /* transform: translateY(270px); */
   
 }
 
@@ -1016,12 +1026,12 @@ button {
 .about-text h3,
 .about-list {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(-10%);
     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
     margin: 10px;
 }
 .about-text h3{
-    margin-top: 300px;
+    margin-top: 30px;
     font-weight: bolder;
     font-size: 30px;
     font-family: 'Lilita One'; 
@@ -1071,9 +1081,9 @@ button {
     #about{
         padding: 0 20px;
     }
-    .about-text{
-        transform: translateY(-150px);
-    }
+    /* .about-text{
+        transform: translateY(1%);
+    } */
     .about-text-p1{
         font-size: 20px;
     }
@@ -1224,14 +1234,14 @@ button {
 .courses-text{
     max-width: 100%;
     height: auto;
-    /* transform: translateY(-500px); */
+    transform: translateY(-5%);
     display: flex;
     flex-direction: column;
     align-items: center;  
    
 }
 .course-h1{
-    font-size: 50px !important;
+    font-size: 45px !important;
     font-weight: bolder;
     font-family: 'Lilita One'; 
     text-align: center;
@@ -1299,16 +1309,15 @@ button {
     #courses {
         padding: 0 20px;
     }
-    .course-h1 {
-        font-size: 40px;
-        transform: translateY(-55px);
-    }
+    /* .course-text {
+        transform: translateY(-950%) !important;
+    } */
     /* .course-text-p1 {
         font-size: 10px;
         transform: translateY(-10px);
     } */
     .course-list-container {      
-        transform: translateY(-40px);
+        /* transform: translateY(-40px); */
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1337,9 +1346,9 @@ button {
     #courses {
         padding: 0 20px;
     }
-    .course-h1 {
+    /* .course-h1 {
         transform: translateY(-5px);
-    }
+    } */
     /* .course-text-p1 {
         font-size: 18px;
         transform: translateY(-10px);
@@ -1360,9 +1369,9 @@ button {
     #courses {
         padding: 0 20px;
     }
-    .course-h1 {
+    /* .course-h1 {
         transform: translateY(-20px);
-    }
+    } */
     /* .course-text-p1 {
         font-size: 20px;
         transform: translateY(-10px);
@@ -1382,9 +1391,9 @@ button {
     #courses {
         padding: 0 20px;
     }
-    .course-h1 {
+    /* .course-h1 {
         transform: translateY(-20px);
-    }
+    } */
     /* .course-text-p1 {
         font-size: 20px;
         transform: translateY(-10px);
@@ -1411,9 +1420,9 @@ button {
     #courses {
         padding: 0 10px;  /* Reduce side padding to fit items */
     }
-    .course-h1 {
+    /* .course-h1 {
         transform: translateY(-40px);
-    }
+    } */
     /* .course-text-p1 {
         font-size: 20px;
         transform: translateY(-10px);
@@ -1443,9 +1452,9 @@ button {
     #courses {
         padding: 0 10px;  /* Reduce side padding */
     }
-    .course-h1 {
+    /* .course-h1 {
         transform: translateY(-50px);
-    }
+    } */
     /* .course-text-p1 {
         font-size: 20px;
         transform: translateY(-10px);
@@ -1482,7 +1491,7 @@ button {
 .services-text{
     max-width: 100%;
     height: auto;
-    /* transform: translateY(-500px); */
+    transform: translateY(-2%);
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -1500,7 +1509,7 @@ button {
 .services-list-container {
     padding: 0;
     margin: 0;
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
 }
 
 .services-list {
@@ -1551,15 +1560,15 @@ button {
 @media (min-width: 100px) and (max-width: 480px) {
     .services-text-h1{
         font-size: 40px;
-        transform: translateY(-25px);
+        transform: translateY(50%) !important;
     }
     .services-list-container {
         width: 100%;
         grid-template-columns: 1fr; /* One item per row */
-        transform: translateY(-45px);
+        /* transform: translateY(-45px); */
     }
     .services-list{
-        margin: 10px 20px;
+        margin: 15px 20px;
     }
     .services-title{
         font-size: 20px;
@@ -1570,12 +1579,12 @@ button {
 }
 /*  Screen Layout */
 @media (min-width: 480px) and (max-width: 630px) {
-    .services-text-h1{
-        transform: translateY(5px);
-    }
+    /* .services-text-h1{
+        transform: translateY(5%) !important;
+    } */
     .services-list-container {
         grid-template-columns: 1fr; /* One item per row */
-        transform: translateY(-20px);
+        transform: translateY(-3%);
     }
     .services-list{
         margin: 15px 20px;
@@ -1587,11 +1596,12 @@ button {
 
 /* Tablet Portrait Layout */
 @media (min-width: 630px) and (max-width: 770px) {
-    .services-text-h1{
+    /* .services-text-h1{
         transform: translateY(20px);
-    }
+    } */
     .services-list-container {
         grid-template-columns: 1fr; /* One item per row */
+        transform: translateY(-3%);
     }
     .services-list{
         margin: 15px 20px;
@@ -1606,10 +1616,11 @@ button {
         padding: 0 20px;
     }
     .services-text-h1 {
-        transform: translateY(25px);
+        transform: translateY(30%) ;
     }
     .services-list-container {
         grid-template-columns: 1fr; /* One item per row */
+        
     }
     .services-list{
         margin: 15px 20px;
@@ -1622,9 +1633,9 @@ button {
     #services {
         padding: 0 10px;  /* Reduce side padding to fit items */
     }
-    .services-text-h1 {
+    /* .services-text-h1 {
         transform: translateY(-10px);
-    }  
+    }   */
     .services-list-container {
         display: flex;
         flex-direction: row;
@@ -1653,9 +1664,9 @@ button {
     #services {
         padding: 0 10px;  /* Reduce side padding */
     }
-    .services-text-h1 {
+    /* .services-text-h1 {
         transform: translateY(-20px);
-    }
+    } */
     .services-list-container {
         display: flex;
         flex-direction: row;
@@ -1691,19 +1702,19 @@ button {
 .contact-text{
     max-width: 100%;
     height: auto;
-    /* transform: translateY(-500px); */
     display: flex;
     flex-direction: column;
     align-items: center;  
-   
+    
 }
 .contact-text-h1{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bolder;
     font-family: 'Lilita One'; 
     text-align: center;
     color: #ffffff;
     text-shadow: 5px 5px 3px black;
+    transform: translateY(20%);
 }
 .contact-text-p{
     font-size: 20px;
@@ -1723,7 +1734,7 @@ button {
 
 .contact-items {
     text-align: center; /* Center align the text in this div */
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 .contact-items a{
@@ -1744,12 +1755,12 @@ button {
     color: #ffffff;
     font-weight: bolder;
     font-family: 'Comic Sans';
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
 }
 
 /* Media Query for Responsiveness */
 /* Screen 0 */
-@media (min-width: 100px) and (max-width: 480px) {
+/* @media (min-width: 100px) and (max-width: 480px) {
     .contact-text-h1{
         transform: translateY(40px);
     }
@@ -1760,9 +1771,9 @@ button {
         transform: translateY(-35px);
     }
 
-}
+} */
 /* Screen 1 */
-@media (min-width: 480px) and (max-width: 630px) {
+/* @media (min-width: 480px) and (max-width: 630px) {
     .contact-text-h1{
         transform: translateY(80px);
     }
@@ -1770,10 +1781,10 @@ button {
         transform: translateY(75px);
     }
 
-}
+} */
 
 /* Screen 2 */
-@media (min-width: 630px) and (max-width: 770px) {
+/* @media (min-width: 630px) and (max-width: 770px) {
     .contact-text-h1{
         transform: translateY(80px);
     }
@@ -1781,34 +1792,34 @@ button {
         transform: translateY(75px);
     }
 
-}
+} */
 /* Screen 3 */
-@media (min-width: 770px) and (max-width: 1024px) {
+/* @media (min-width: 770px) and (max-width: 1024px) {
     .contact-text-h1{
         transform: translateY(80px);
     }
     .contact-text-p{
         transform: translateY(75px);
     }
-}
+} */
 /* Screen 4 */
-@media (min-width: 1024px) and (max-width: 1300px) {
+/* @media (min-width: 1024px) and (max-width: 1300px) {
     .contact-text-h1{
         transform: translateY(80px);
     }
     .contact-text-p{
         transform: translateY(75px);
     }
-}
+} */
 /* Screen 5 */
-@media (min-width: 1300px) and (max-width: 2400px) {
+/* @media (min-width: 1300px) and (max-width: 2400px) {
     .contact-text-h1{
         transform: translateY(80px);
     }
     .contact-text-p{
         transform: translateY(75px);
     }
-}
+} */
 
 /* Register Section */
 #register {
@@ -1816,6 +1827,10 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: justify;
+    position: relative;
+}
+.register-content{
+    transform: translateY(-18%);
 }
 
 .register-h1{
@@ -1824,6 +1839,7 @@ button {
     font-family: 'Lilita One'; 
     text-align: center;
     color: #ffffff;
+    transform: translateY(10%);
     text-shadow: 5px 5px 3px black;
 }
 .registration-box{
@@ -1900,12 +1916,13 @@ button {
     #register{
         padding: 0 20px;
     }
-    .registration-box{
+    /* .registration-box{
         transform: translateY(-50px);
-    }
+    } */
+     
     .register-h1{
-        transform: translateY(-45px);
-        font-size: 33px ;
+        /* transform: translateY(-45px); */
+        font-size: 35px ;
     }
     .registration-form input, .registration-form select {
         font-size: 12px;
@@ -1918,12 +1935,12 @@ button {
     #register{
         padding: 0 20px;
     }
-    .registration-box{
+    /* .registration-box{
         transform: translateY(-35px) ;
     }
     .register-h1{
         transform: translateY(-30px);
-    }
+    } */
     .registeration-btn:hover {
         background-color: #892CDC;
         color: white;
@@ -1939,12 +1956,12 @@ button {
     #register{
         padding: 0 20px;
     }
-    .registration-box{
+    /* .registration-box{
         transform: translateY(-35px);
     }
     .register-h1{
         transform: translateY(-30px);
-    }
+    } */
     .registeration-btn:hover {
         background-color: #892CDC;
         color: white;
@@ -1959,12 +1976,12 @@ button {
     #register{
         padding: 0 20px;
     }
-    .registration-box{
+    /* .registration-box{
         transform: translateY(5px);
     }
     .register-h1{
         transform: translateY(10px);
-    }
+    } */
     .registeration-btn:hover {
         background-color: #892CDC;
         color: white;
@@ -1978,12 +1995,12 @@ button {
     #register{
         padding: 0 20px;
     }
-    .registration-box{
+    /* .registration-box{
         transform: translateY(5px);
     }
     .register-h1{
         transform: translateY(10px);
-    }
+    } */
     .registeration-btn:hover {
         background-color: #892CDC;
         color: white;
@@ -1997,12 +2014,12 @@ button {
     #register{
         padding: 0 20px;
     }
-    .registration-box{
+    /* .registration-box{
         transform: translateY(5px);
     }
     .register-h1{
         transform: translateY(10px);
-    }
+    } */
     .registeration-btn:hover {
         background-color: #892CDC;
         color: white;
@@ -2019,7 +2036,8 @@ footer {
     color: #fff;
     padding: 3px 20px 20px 5px;
     box-sizing: border-box;
-    /* transform: translateY(30px); */
+    position: absolute;
+    bottom: 0;
 }
 
 /* Centering content inside the footer */
@@ -2146,9 +2164,9 @@ footer {
 
 /* Responsive Footer Design */
 @media (min-width: 100px) and (max-width: 480px) {
-    footer{
+    /* footer{
         transform: translateY(50px);
-    }
+    } */
     .footer-flex {
         flex-direction: column;
         gap: 20px;
@@ -2180,9 +2198,9 @@ footer {
 }
 
 @media (min-width: 480px) and (max-width: 630px) {
-    footer{
+    /* footer{
         transform: translateY(90px);
-    }
+    } */
     .footer-flex {
         flex-direction: column;
         gap: 20px;
@@ -2200,9 +2218,9 @@ footer {
 }
 
 @media (min-width: 630px) and (max-width: 770px){
-    footer{
+    /* footer{
         transform: translateY(90px);
-    }
+    } */
     .footer-flex {
         flex-direction: column;
         gap: 20px;
@@ -2218,9 +2236,9 @@ footer {
     }
 }
 @media (min-width: 770px) and (max-width: 1024px){
-    footer{
+    /* footer{
         transform: translateY(90px);
-    }
+    } */
         .footer-flex {
             flex-direction: column;
             gap: 20px;
@@ -2236,9 +2254,9 @@ footer {
         }
        }
 @media (min-width: 1024px) and (max-width: 1300px){
-    footer{
+    /* footer{
         transform: translateY(90px);
-    }
+    } */
         .footer-flex {
             flex-direction: column;
             gap: 20px;
@@ -2254,9 +2272,9 @@ footer {
         }
        }
 @media (min-width: 1300px) and (max-width: 2400px) {
-        footer{
+        /* footer{
             transform: translateY(90px);
-        }
+        } */
         .footer-flex {
             flex-direction: column;
             gap: 20px;
