@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <section id="courses">
+        <!-- Navigation Bar -->
+        <header>
+            <div class="logo">
+                <!-- First Logo (logo1) for when hamburger is visible -->
+                <a href="home.html"><img src="Images/Logo5.png" id="logo1" class="logo-image"></a>
+                
+                <!-- Second Logo (logo2) for when hamburger is hidden -->
+                <a href="home.html"><img src="Images/Logo6.png" id="logo2" class="logo-image" style="display: none;"></a>
+            </div>
+            
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    
+                </ul>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+            </nav>
+        </header>
+        <div class="courses-text">
+            <!-- <img src="Images/OurCourses.png" alt="Courses We Provide"> -->
+            <h1 class="course-h1">Our Courses</h1>
+            <!-- <p class="course-text-p1"><strong>Our Courses at Rufeens' &mdash; Building a Strong Academic Future</strong></p> -->
+            
+            <ul class="course-list-container">
+                <li class="course-list">
+                    <div class="course-content">
+                        <div class="course-title"><strong>Foundation Classes (8th to 12th) :</strong></div>
+                        <div class="course-description">Comprehensive subject coverage for JK BOSE and CBSE students with a focus on conceptual clarity and timely syllabus completion.</div>
+                    </div>
+                </li>
+                <li class="course-list">
+                    <div class="course-content">
+                        <div class="course-title"><strong>JEE Preparation :</strong></div>
+                        <div class="course-description">Rigorous coaching for engineering aspirants with expert faculty, personalized mentorship, and extensive practice materials.</div>
+                    </div>
+                </li>
+                <li class="course-list">
+                    <div class="course-content">
+                        <div class="course-title"><strong>NEET Preparation :</strong></div>
+                        <div class="course-description">Specialized training for medical entrance exams with in-depth coverage of PCB subjects and exam-oriented strategies.</div>
+                    </div>
+                </li>
+            </ul>
+            
+            
+
+        </div>
+        
+    </section>
+    <!-- Chatbot Button -->
+    <div class="chatbot" id="chatbot">
+        <div class="tooltip">
+            <button id="chatbot-btn">&#128172;</button>
+            <span class="tooltip-text">Chat with us!</span>
+        </div>
+        
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h3>Chat with Us</h3>
+                <button class="close-btn" id="close-chat">&#10006;</button>
+            </div>
+            <div class="chat-body">
+                <p>Hello! How can I assist you today?</p>
+            </div>
+            <input type="text" placeholder="Type your message..." class="chat-input">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

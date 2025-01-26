@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="services">
+           <!-- Navigation Bar -->
+           <header>
+            <div class="logo">
+                <!-- First Logo (logo1) for when hamburger is visible -->
+                <a href="home.html"><img src="Images/Logo5.png" id="logo1" class="logo-image"></a>
+                
+                <!-- Second Logo (logo2) for when hamburger is hidden -->
+                <a href="home.html"><img src="Images/Logo6.png" id="logo2" class="logo-image" style="display: none;"></a>
+            </div>
+            
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    
+                </ul>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+            </nav>
+        </header>
+        <div class="services-text">
+            <h1 class="services-text-h1">Our Services</h1>
+            <ul class="services-list-container">
+                <li class="services-list">
+                    <div class="services-content">
+                        <div class="services-title"><strong>Mega Scholarship Test:</strong></div>
+                        <div class="services-description">Scholarship worth up to 90% with total prizes worth ₹25 lakhs.</div>
+                    </div>
+                </li>
+                <li class="services-list">
+                    <div class="services-content">
+                        <div class="services-title"><strong>Foundation Classes:</strong></div>
+                        <div class="services-description">Comprehensive syllabus completion for 8th, 9th, 10th, 11th and 12th boards (JK BOSE / CBSE).</div>
+                    </div>
+                </li>
+                <li class="services-list">
+                    <div class="services-content">
+                        <div class="services-title"><strong>Expert Faculty:</strong></div>
+                        <div class="services-description">Learn from teachers with years of experience from top schools.</div>
+                    </div>
+                </li>
+                <li class="services-list">
+                    <div class="services-content">
+                        <div class="services-title"><strong>Level-Up Competitive Programs:</strong></div>
+                        <div class="services-description">Designed for students aiming to excel in competitive exams.</div>
+                    </div>
+                </li>
+                
+                <li class="services-list">
+                    <div class="services-content">
+                        <div class="services-title"><strong>On-Time Syllabus Completion:</strong></div>
+                        <div class="services-description">Ensuring you are well-prepared for school and board exams.</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Chatbot Button -->
+    <div class="chatbot" id="chatbot">
+        <div class="tooltip">
+            <button id="chatbot-btn">&#128172;</button>
+            <span class="tooltip-text">Chat with us!</span>
+        </div>
+        
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h3>Chat with Us</h3>
+                <button class="close-btn" id="close-chat">&#10006;</button>
+            </div>
+            <div class="chat-body">
+                <p>Hello! How can I assist you today?</p>
+            </div>
+            <input type="text" placeholder="Type your message..." class="chat-input">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

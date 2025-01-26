@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Font Awesome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <section id="register">
+              <!-- Navigation Bar -->
+              <header>
+                <div class="logo">
+                    <!-- First Logo (logo1) for when hamburger is visible -->
+                    <a href="home.html"><img src="Images/Logo5.png" id="logo1" class="logo-image"></a>
+                    
+                    <!-- Second Logo (logo2) for when hamburger is hidden -->
+                    <a href="home.html"><img src="Images/Logo6.png" id="logo2" class="logo-image" style="display: none;"></a>
+                </div>
+                
+                <nav>
+                    <ul id="nav-list">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="registration.html">Register</a></li>
+                        
+                    </ul>
+                    <div class="hamburger" id="hamburger">&#9776;</div>
+                </nav>
+            </header>
+        <div class="register-content">
+            <!-- <div class="register-icon-container">
+                <img src="Images/GetRegistered.png" alt="Register Now" class="register-icon">
+            </div> -->
+            <h1 class="register-h1">Join Us Today!</h1>
+            <!-- Registration Form Box -->
+<div class="registration-box">
+    <form action="#" method="POST" class="registration-form">
+
+        <div class="form-row">
+            <div class="label-container">
+                <label for="name"><strong>Name:</strong></label>
+            </div>
+            <div class="input-container">
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required >
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="label-container">
+                <label for="email"><strong>Email:</strong></label>
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required >
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="label-container">
+                <label for="mobile"><strong>Mobile:</strong></label>
+            </div>
+            <div class="input-container">
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required >
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="label-container">
+                <label for="gender"><strong>Gender:</strong></label>
+            </div>
+            <div class="input-container gender-options">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="other" required> Other</label>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="label-container">
+                <label for="course"><strong>Course:</strong></label>
+            </div>
+            <div class="input-container">
+                <select id="course" name="course" required >
+                    <option value="select">Select</option>
+                    <option value="course1">8th</option>
+                    <option value="course2">9th</option>
+                    <option value="course3">10th</option>
+                    <option value="course4">11th</option>
+                    <option value="course5">12th</option>
+                    <option value="course6">JEE</option>
+                    <option value="course7">NEET</option>
+
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="registeration-btn">Register</button>
+    </form>
+</div>
+
+        </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+        <!-- Flex Container -->
+        <div class="footer-flex">
+            <div class="Footer-elements">
+              
+                <div class="logo-align">
+                    <!-- <img src="Images/Logo5.png" alt="Logo" class="logo-img"> -->
+                    
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <p>Follow Us: </p> 
+                        <div class="social-icons-link">
+                            <a href="https://wa.me/919596210477">
+                                <i class="fa-brands fa-whatsapp" style=" color: #25D366;"></i>
+                            </a>
+                            <a href="https://www.instagram.com/rufeen.at90/">
+                                <i class="fa-brands fa-instagram" style=" color: #E4405F;"></i>
+                            </a>
+                            <a href="https://www.facebook.com/rufeen.khan/">
+                                <i class="fa-brands fa-facebook" style=" color: #1877F2;"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCkPo237nGP9PloJARRu79hw">
+                                <i class="fa-brands fa-youtube" style=" color: #FF3B30;"></i>
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+                  <!-- Footer Icons -->
+                <!-- <div class="footer-icons">
+                    <p>Contact Us:</p>
+                    <a href="tel:+91 8899615327">+91 8899615327</a>
+                    <a href="tel:+91 9596210477">+91 9596210477</a>
+                    <a href="mailto:example@example.com">support@rufeens90ft.com</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <p class="footer-text">&copy; 2025 Rufeens' Foundation Classes. All rights reserved.</p>
+</footer>
+
+    </section>
+
+        <!-- Chatbot Button -->
+        <div class="chatbot" id="chatbot">
+            <div class="tooltip">
+                <button id="chatbot-btn">&#128172;</button>
+                <span class="tooltip-text">Chat with us!</span>
+            </div>
+            
+            <div class="chat-window" id="chat-window">
+                <div class="chat-header">
+                    <h3>Chat with Us</h3>
+                    <button class="close-btn" id="close-chat">&#10006;</button>
+                </div>
+                <div class="chat-body">
+                    <p>Hello! How can I assist you today?</p>
+                </div>
+                <input type="text" placeholder="Type your message..." class="chat-input">
+            </div>
+       
+    <script src="script.js"></script>
+</body>
+</html>

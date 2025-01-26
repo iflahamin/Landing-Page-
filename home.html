@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rufeens' at 90ft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Content -->
+    <section id="home">
+        <!-- Navigation Bar -->
+        <header>
+            <div class="logo">
+                <!-- First Logo (logo1) for when hamburger is visible -->
+                <a href="home.html"><img src="Images/Logo5.png" id="logo1" class="logo-image"></a>
+                
+                <!-- Second Logo (logo2) for when hamburger is hidden -->
+                <a href="home.html"><img src="Images/Logo6.png" id="logo2" class="logo-image" style="display: none;"></a>
+            </div>
+            
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    
+                </ul>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+            </nav>
+        </header>
+        <div class="cutouts"> 
+            <img src="Images/Book.png" class="cutout book">
+            <img src="Images/Hat.png" class="cutout hat">
+            <!-- <img  src="Images/Pencil.png" class="cutout pencil"> -->
+            <!-- <img src="Images/Pencil.png" alt="Enroll Now" usemap="#enroll-map" class="cutout pencil">
+            <map name="enroll-map">
+            <area shape="rect" coords="60,30,150,100" href="#register" alt="Enroll Now">
+            </map> -->
+
+
+        </div>
+        <!-- <div>
+            <img id="sir" src="Images/RufeenSir.png" alt="Rufeen Sir">
+        </div> -->
+       
+        <div class="home-text">
+            <h1 class="home-text-h1">Welcome to Rufeen<sup>sir</sup><br> &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;at 90<sup>ft</sup></h1>
+            <p class="home-text-p">Empower your academic journey with our expertly designed foundation classes for 8th, 9th, and 10th grades (JK BOSE/CBSE), preparing students with a strong conceptual understanding and problem-solving skills. Our comprehensive coaching covers competitive exams like JEE, NEET, and other entrance tests, ensuring students excel with confidence. Join us to benefit from personalized mentorship, mega scholarship opportunities, and a proven track record of academic excellence under the expert guidance of Rufeen Sir. </p>
+            
+        </div>
+        <div class="offers" id="offers">
+            <p class="offer1">Admissions Open for Session 2025 - 26</p>
+            <p class="offer2">Mega Scholarship Test with Prizes Worth 25 Lakhs</p>
+            <p class="offer3">Scholarship Upto 90%</p>
+            <a href="registration.html" class="register-btn">Register Now</a>
+        </div>
+   
+        <!-- Wave Animation -->
+        <div class="wave-container">
+            
+            
+            <svg viewBox="0 0 1920 500" preserveAspectRatio="none">
+                <path fill="#ffffff"></path>
+                <path fill="#892CDC"></path>
+            </svg>
+        </div>
+    </section>
+    <!-- Chatbot Button -->
+    <div class="chatbot" id="chatbot">
+        <div class="tooltip">
+            <button id="chatbot-btn">&#128172;</button>
+            <span class="tooltip-text">Chat with us!</span>
+        </div>
+        
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h3>Chat with Us</h3>
+                <button class="close-btn" id="close-chat">&#10006;</button>
+            </div>
+            <div class="chat-body">
+                <p>Hello! How can I assist you today?</p>
+            </div>
+            <input type="text" placeholder="Type your message..." class="chat-input">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

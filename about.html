@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rufeens' Foundation Classes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Content -->  
+    <section id="about">
+        <!-- Navigation Bar -->
+        <header>
+            <div class="logo">
+                <!-- First Logo (logo1) for when hamburger is visible -->
+                <a href="home.html"><img src="Images/Logo5.png" id="logo1" class="logo-image"></a>
+                
+                <!-- Second Logo (logo2) for when hamburger is hidden -->
+                <a href="home.html"><img src="Images/Logo6.png" id="logo2" class="logo-image" style="display: none;"></a>
+            </div>
+            
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    
+                </ul>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+            </nav>
+        </header>
+    
+            <!-- <div class="about-icon-container">
+                <img src="Images/AboutUs.png" alt="About Us" class="about-icon">
+                 <h1>About Us</h1>
+            </div> -->
+            
+            <div class="about-text">
+                <h1 class="about-h1">About Us</h1>
+                <p class="about-text-p1"><strong>Rufeens' at 90<sup>ft</sup>   &mdash;  Where Excellence Begins</strong></p>
+                <p class="about-text-p2">At Rufeens', we specialize in building a strong academic foundation for students of 8th, 9th, and 10th grades (JK BOSE / CBSE). With a focus on personalized learning, competitive exam preparation, and timely syllabus completion. Our experienced faculty, consisting of highly qualified teachers from top institutions, are dedicated to nurturing each student's potential with innovative teaching methods and individual attention. </p>
+    
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li class="about-list">Mentorship by Rufeens Sir</li>
+                    <li class="about-list">Proven Track Record of Academic Excellence</li>
+                    <li class="about-list">Focused Level-Up Programs for Competitive Exams</li>
+                    <li class="about-list">Faculty from Top-notch Schools</li>
+                </ul>
+            </div>
+       
+    </section>
+  
+
+    <!-- Chatbot Button -->
+    <div class="chatbot" id="chatbot">
+        <div class="tooltip">
+            <button id="chatbot-btn">&#128172;</button>
+            <span class="tooltip-text">Chat with us!</span>
+        </div>
+        
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h3>Chat with Us</h3>
+                <button class="close-btn" id="close-chat">&#10006;</button>
+            </div>
+            <div class="chat-body">
+                <p>Hello! How can I assist you today?</p>
+            </div>
+            <input type="text" placeholder="Type your message..." class="chat-input">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
