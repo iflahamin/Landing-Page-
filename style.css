@@ -254,7 +254,7 @@ button {
 /* Chatbot Styles */
 .chatbot {
     position: fixed;
-    bottom: 15px;
+    bottom: 20px;
     right: 20px;
     z-index: 999; /* Ensure chatbot is behind the hamburger */
 }
@@ -626,6 +626,9 @@ button {
     }
     .register-btn{
         width: 50%;
+    }
+    .chatbot{
+        bottom: 10px !important;
     }
 }
 
